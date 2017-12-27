@@ -1,1 +1,1 @@
-"Minimalist journaling cli app" 
+Minimalist journaling cli app
