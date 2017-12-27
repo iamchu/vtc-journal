@@ -1,5 +1,6 @@
 # minimalist journaling app
 # change file name for day only and separate appending and etc by time that entry was created.
+# handle multiple lines
 import os
 import time
 
@@ -42,7 +43,6 @@ def writeToFile(user_input, my_file):
 	print "Sucess. Now exiting app..."
 	messageExit()
 
-
 def messageExit():
 	print "Exited application."
 
@@ -53,4 +53,11 @@ def main():
 	else:
 		writeToFile(user_input, my_file)
 
-main()
+# lines = []
+# while True:
+#     line = input()
+#     if line:
+#         lines.append(line)
+#     else:
+#         break
+# text = '\n'.join(lines)
