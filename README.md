@@ -1,1 +1,1 @@
-Minimalist journaling cli app
+Minimal journaling cli app
