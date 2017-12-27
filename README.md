@@ -1,0 +1,1 @@
+"Minimalist journaling cli app" 
