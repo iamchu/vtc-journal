@@ -1,6 +1,8 @@
 # minimalist journaling app
-# change file name for day only and separate appending and etc by time that entry was created.
-# handle multiple lines
+# * handle multiple lines
+# + change file name for day only and separate appending and etc by time that entry was created.
+# don't ask for appending if file already exists, just append already to the damn thing!
+
 import os
 import time
 
@@ -35,11 +37,20 @@ def createTxt():
 
 def writeToFile(user_input, my_file):
 	print "Entry for " + time.strftime("%d/%m/%Y") + " " + time.strftime("%H:%M") + ":"
-	user_entry = raw_input()
+	lines = []
+	while True:
+	    line = raw_input()
+	    if line:
+	        lines.append(line)
+	    else:
+	        break
+	user_entry = '\n'.join(lines)
+
 	if(user_input == "A" or user_input == "a"):
 		user_entry = "\n" + user_entry
 	my_file.write(user_entry)
 	my_file.close()
+
 	print "Sucess. Now exiting app..."
 	messageExit()
 
@@ -52,12 +63,3 @@ def main():
 		messageExit()
 	else:
 		writeToFile(user_input, my_file)
-
-# lines = []
-# while True:
-#     line = input()
-#     if line:
-#         lines.append(line)
-#     else:
-#         break
-# text = '\n'.join(lines)
