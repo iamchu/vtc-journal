@@ -2,6 +2,7 @@
 # * handle multiple lines
 # + change file name for day only and separate appending and etc by time that entry was created.
 # don't ask for appending if file already exists, just append already to the damn thing!
+# essa aqui eh pra supostamente ser a branch ultra-minimal
 
 import os
 import time
