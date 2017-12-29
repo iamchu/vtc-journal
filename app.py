@@ -1,8 +1,4 @@
 # minimalist journaling app
-# * handle multiple lines
-# + change file name for day only and separate appending and etc by time that entry was created.
-# don't ask for appending if file already exists, just append already to the damn thing!
-
 import os
 import time
 
