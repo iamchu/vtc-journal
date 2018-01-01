@@ -42,7 +42,7 @@ def writeToFile(is_appending, my_file):
 	messageExit()
 
 def messageExit():
-	print "Exited application."
+	print "Exited."
 
 def main():
 	is_appending, my_file = createTxt()
