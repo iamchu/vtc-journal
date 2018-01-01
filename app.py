@@ -30,7 +30,7 @@ def writeToFile(is_appending, my_file):
 	        lines.append(line)
 	    else:
 	        break
-	user_entry = '\n' + "[" + time.strftime("%Hh%M") + "]" + '\n'.join(lines)
+	user_entry = '\n' + "[" + time.strftime("%Hh%M") + "]" + '\n' + '\n'.join(lines)
 
 	if(is_appending):
 		user_entry = "\n" + user_entry
